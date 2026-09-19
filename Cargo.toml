@@ -1,0 +1,46 @@
+[package]
+name = "mimi-pyo3"
+version.workspace = true
+edition.workspace = true
+description.workspace = true
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+license.workspace = true
+
+[lib]
+name = "rustymimi"
+crate-type = ["cdylib"]
+
+[dependencies]
+anyhow = { workspace = true }
+numpy = { workspace = true }
+pyo3 = { workspace = true }
+moshi = { workspace = true }
+
+[workspace]
+members = [".", "moshi-core"]
+resolver = "2"
+
+[workspace.package]
+version = "0.6.4"
+edition = "2021"
+license = "MIT/Apache-2.0"
+description = "Moshi, a real-time voice AI Mimi codec binding"
+repository = "https://github.com/koodaamo/rustymimi"
+keywords = ["machine-learning", "audio"]
+categories = ["science"]
+
+[workspace.dependencies]
+anyhow = "1"
+candle = { version = "0.9.1", package = "candle-core" }
+candle-flash-attn = "0.9.1"
+candle-nn = "0.9.1"
+candle-transformers = "0.9.1"
+moshi = { path = "./moshi-core", version = "0.6.4" }
+numpy = "0.26.0"
+pyo3 = "0.26.0"
+pyo3-ffi = "0.26.0"
+rayon = "1.8.1"
+serde = { version = "1.0", features = ["derive"] }
+tracing = "0.1.40"
