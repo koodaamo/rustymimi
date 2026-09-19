@@ -850,7 +850,7 @@ dependencies = [
 
 [[package]]
 name = "mimi-pyo3"
-version = "0.6.4"
+version = "0.6.5"
 dependencies = [
  "anyhow",
  "moshi",
@@ -869,7 +869,7 @@ dependencies = [
 
 [[package]]
 name = "moshi"
-version = "0.6.4"
+version = "0.6.5"
 dependencies = [
  "candle-core",
  "candle-flash-attn",

@@ -23,7 +23,7 @@ members = [".", "moshi-core"]
 resolver = "2"
 
 [workspace.package]
-version = "0.6.4"
+version = "0.6.5"
 edition = "2021"
 license = "MIT/Apache-2.0"
 description = "Moshi, a real-time voice AI Mimi codec binding"
@@ -37,7 +37,7 @@ candle = { version = "0.9.1", package = "candle-core" }
 candle-flash-attn = "0.9.1"
 candle-nn = "0.9.1"
 candle-transformers = "0.9.1"
-moshi = { path = "./moshi-core", version = "0.6.4" }
+moshi = { path = "./moshi-core", version = "0.6.5" }
 numpy = "0.26.0"
 pyo3 = "0.26.0"
 pyo3-ffi = "0.26.0"
